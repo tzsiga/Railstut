@@ -23,11 +23,11 @@ hr {
 	padding: 0;
 }
 
-H1, H2, H3 {
+h1, h2, h3 {
 	margin: 0;
 	padding: 14px 0px;
 	color: #dfdfdf;
-	font-family: "Trebuchet MS";
+	font-family: Ubuntu, "Segoe UI", "Trebuchet MS";
 	font-weight: normal;
 	text-shadow: #000000 0px 3px 2px;	
 }
@@ -52,7 +52,7 @@ table.kozh {
 #menu_logo_text {
 	display: inline-block;
 	color: #fbf4aa;
-	font-family: "Trebuchet MS";
+	font-family: Ubuntu, "Segoe UI", "Trebuchet MS";
 	font-weight: normal;
 	text-shadow: #000000 0px 5px 5px;
 	font-size: 250%;
