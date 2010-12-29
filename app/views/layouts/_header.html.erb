@@ -1,11 +1,14 @@
-<header>
-  <% logo = image_tag("logo.png", :alt => "Sample App", :class => "round") %>
-  <%= link_to logo, root_path %>
-  <nav class="round">
-    <ul>
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "Help", help_path %></li>
-      <li><%= link_to "Sign in", '#' %></li>
-    </ul>
-  </nav>
-</header>
+<div id="menubar">
+	<span id="menu_logo_text">Rails by zs</span>
+	<div id="menu">
+		<%= link_to "Home", root_path %> | 
+		<%= link_to "About", about_path %> |
+		<%= link_to "Contact", contact_path %> |
+		<%= link_to "Help", help_path %> |
+		<strong><%= link_to "Sign in", '#' %></strong>
+	</div>
+</div>
+<div class="h_shadow">
+	<img src="stylesheets/comedy/img/shadow_horizontal.png" width="100%" height="40px" alt="shadow"/>
+</div>
+

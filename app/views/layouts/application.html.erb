@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <%= csrf_meta_tag %>
-    <%= render 'layouts/stylesheets' %>
-  </head>
-  <body>
-    <div class="container">
-      <%= render 'layouts/header' %>
-      <section class="round">
-        <%= yield %>
-      </section>
-      <%= render 'layouts/footer' %>
-      <%= debug(params) if Rails.env.development? %>
-    </div>
-  </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang='hu' xml:lang='hu' xmlns='http://www.w3.org/1999/xhtml'>
+	<head>
+		<title><%= title %></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<%= csrf_meta_tag %>
+		<%= render 'layouts/stylesheets' %>
+	</head>
+	<body>
+		<%= render 'layouts/header' %>
+		<div id="content">
+			<div class="padder">
+				<%= yield %>
+				<!--
+					<%= debug(params) if Rails.env.development? %>
+				-->
+			</div>
+			<%= render 'layouts/footer' %>
+		</div>
+		<div id="bottom_shadow"></div>
+	</body>
 </html>
+
