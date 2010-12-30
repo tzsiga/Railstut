@@ -2,16 +2,21 @@
 	<tr>
 		<td class="profile">
 			<h1>
-				<span class="left">
-					<%= gravatar_for @user %>
-				</span>
 				<%= @user.name %>
 			</h1>
 			<div class="bigger">
 				<%= @user.email %>
 			</div>
+			<br />
+			<% unless @user.microposts.empty? %>
+	        <table class="microposts">
+	        	<%= render @microposts %>
+	        </table>
+	        <%= will_paginate @microposts %>
+	      	<% end %>
 		</td>
     	<td class="sidebar bigger">
+			<div class="centered"><%= gravatar_for @user %></div>
 			<strong>Name:</strong> <%= @user.name %><br />
 			<strong>URL:</strong>  <%= link_to user_path(@user), @user %>
 		</td>

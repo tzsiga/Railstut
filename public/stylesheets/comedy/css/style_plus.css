@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* errors from custom.css */
+/* === errors from custom.css ============================== */
 
 .field_with_errors {
   margin-top: 10px;
@@ -17,7 +17,7 @@
 }
 
 #error_explanation {
-  width: 600px;
+  width: auto;
   border: 2px solid red;
   padding: 7px;
   padding-bottom: 14px;
@@ -47,7 +47,7 @@
   font-size: 14px;
 }
 
-/* trunk */
+/* === trunk ============================== */
 
 ul.users {
   margin-top: 1em;
@@ -55,10 +55,73 @@ ul.users {
 
 .users li {
   list-style: none;
-  margin-bottom: 16px;
 }
 
 .users li img {
   vertical-align: middle;
+}
+
+/* === microposts ============================== */
+
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+table.microposts {
+  margin-top: 1em;
+  width: 450px;
+  border-spacing: 0px;
+}
+
+table.microposts img {
+	margin-top: 10px;
+}
+
+table.microposts tr {
+  height: 80px;
+  min-height: 80px;
+}
+
+table.microposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.microposts tr td.micropost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.microposts tr td.micropost span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.microposts {
+  font-size: 80%;
+}
+
+form.new_micropost {
+  margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+  height: 4em;
+  margin-bottom: 0;
 }
 

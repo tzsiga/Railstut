@@ -11,6 +11,7 @@ before_filter :admin_user,   :only => :destroy
   def show
     @user = User.find(params[:id])
   	@title = @user.name
+  	@microposts = @user.microposts.paginate(:page => params[:page])
   end
 
   def new

@@ -150,8 +150,9 @@ table.kozh {
 	padding-right: 40px;
 }
 .list li {
-	height: 17px;
-	padding: 2px 6px 0px;
+	height: 40px;
+	padding: 10px 10px 0px;
+	margin: 0px;
 }
 .list li:nth-child(odd) {
 	background: #555454
@@ -246,6 +247,8 @@ table {
 .sidebar {
 	width: 30%;
 	line-height: 24px;
+	vertical-align: top;
+	padding-top: 40px;
 }
 
 .param {
