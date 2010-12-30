@@ -239,3 +239,12 @@ table {
 .left {
 	text-align: left;
 }
+
+.profile_tab {
+	width: 100%;
+}
+.sidebar {
+	width: 30%;
+	line-height: 24px;
+}
+

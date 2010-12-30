@@ -1,3 +1,20 @@
-<h1><%= @user.name %></h1>
-<div class="bigger"><%= @user.email %></div>
+<table class="profile_tab">
+	<tr>
+		<td class="profile">
+			<h1>
+				<span class="left">
+					<%= gravatar_for @user %>
+				</span>
+				<%= @user.name %>
+			</h1>
+			<div class="bigger">
+				<%= @user.email %>
+			</div>
+		</td>
+    	<td class="sidebar bigger">
+			<strong>Name:</strong> <%= @user.name %><br />
+			<strong>URL:</strong>  <%= link_to user_path(@user), @user %>
+		</td>
+	</tr>
+</table>
 
