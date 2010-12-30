@@ -248,3 +248,20 @@ table {
 	line-height: 24px;
 }
 
+.param {
+	display: inline-block;
+	width: 140px;
+	text-align: right;
+	margin-right: 10px;
+}
+.field {
+	display: inline-block;
+	width: 200px;
+}
+
+.message {
+	font-weight: bold;
+	font-size: 16px;
+	padding-top: 20px;
+	color: #fbf4aa;
+}
