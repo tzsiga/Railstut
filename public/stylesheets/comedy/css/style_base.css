@@ -252,6 +252,7 @@ table {
 	display: inline-block;
 	width: 140px;
 	text-align: right;
+	margin-left: 40px;
 	margin-right: 10px;
 }
 .field {
@@ -260,8 +261,11 @@ table {
 }
 
 .message {
+	margin: 0px;
+	background-color: grey;
+	color: #fbf4aa;
+	text-align: center;
 	font-weight: bold;
 	font-size: 16px;
-	padding-top: 20px;
-	color: #fbf4aa;
+	line-height: 36px;
 }
