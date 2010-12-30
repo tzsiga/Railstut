@@ -47,3 +47,18 @@
   font-size: 14px;
 }
 
+/* trunk */
+
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.users li img {
+  vertical-align: middle;
+}
+

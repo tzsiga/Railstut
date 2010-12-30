@@ -2,8 +2,6 @@ require 'digest'
 class User < ActiveRecord::Base
 	# init + reader + writer
 	attr_accessor :password
-
-	#RAILS
 	attr_accessible :name, :email, :password, :password_confirmation	# csak ezeknek enged többszörös értékadást
 
 	email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
