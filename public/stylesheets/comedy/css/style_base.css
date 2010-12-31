@@ -272,3 +272,10 @@ table {
 	font-size: 16px;
 	line-height: 36px;
 }
+
+.gravatar_box {
+	text-align: left;
+	line-height: 30px;
+	letter-spacing: 5px;	
+}
+

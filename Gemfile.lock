@@ -116,7 +116,7 @@ DEPENDENCIES
   faker (= 0.3.1)
   gravatar_image_tag
   heroku
-  rails (= 3.0.1)
+  rails
   rspec (= 2.0.1)
   rspec-rails (= 2.0.1)
   sqlite3-ruby

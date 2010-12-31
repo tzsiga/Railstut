@@ -8,6 +8,8 @@
 				<%= @user.email %>
 			</div>
 			<br />
+			<%= render 'follow_form' if signed_in? %>
+			<br />
 			<% unless @user.microposts.empty? %>
 	        <table class="microposts">
 	        	<%= render @microposts %>
@@ -18,7 +20,10 @@
     	<td class="sidebar bigger">
 			<div class="centered"><%= gravatar_for @user %></div>
 			<strong>Name:</strong> <%= @user.name %><br />
-			<strong>URL:</strong>  <%= link_to user_path(@user), @user %>
+			<strong>URL:</strong>  <%= link_to user_path(@user), @user %><br />
+		    <span class="microposts">
+      			<%= pluralize(current_user.microposts.count, "micropost") %>
+		    </span>
 		</td>
 	</tr>
 </table>
